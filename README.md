@@ -43,6 +43,10 @@ gulp.task('compress', function() {
 	options](http://lisperator.net/uglifyjs/codegen). The defaults are
 	optimized for best compression.
 
+- `outputOriginalSource`
+
+	Pass `false` to prevent the original source file from being passed through in addition to the minified file.
+
 - `compress`
 
 	Pass an object to specify custom [compressor

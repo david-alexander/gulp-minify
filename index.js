@@ -117,7 +117,12 @@ module.exports = function(opt) {
 		this.push(min_file);
 
 		file.path = file.path.replace(/\.js$/, ext.src);
-        this.push(file);
+
+		if (options.outputOriginalSource !== false)
+		{
+	        this.push(file);
+	    }
+
 		callback();
 	}
 
